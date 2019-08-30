@@ -48,4 +48,5 @@ app.get('/api/deals/private', (req,res)=>{
 
 app.listen(PORT, () => {
     console.log(`Serving deals and our app is running on port ${ PORT }`);
+  console.log('https://express-test-app-pranay.herokuapp.com/'
 });

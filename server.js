@@ -44,5 +44,5 @@ app.get('/api/deals/private', (req,res)=>{
   res.json(deals);
 })
 
-app.listen(3001);
+app.listen(5000);
 console.log('Serving deals on localhost:3001');

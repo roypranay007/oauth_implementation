@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Public route
-app.get('/api/deals/public', (req, res)=>{
+app.get('', (req, res)=>{
   let deals = [
     {
     id: 1234,

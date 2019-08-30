@@ -9,6 +9,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+const PORT = process.env.PORT || 3000;
+
 // Public route
 app.get('/public', (req, res)=>{
   let deals = [
@@ -44,5 +46,6 @@ app.get('/api/deals/private', (req,res)=>{
   res.json(deals);
 })
 
-app.listen(process.env.PORT|5000);
-console.log('Serving deals on localhost:3001');
+app.listen(PORT, () => {
+    console.log(`Serving deals and our app is running on port ${ PORT }`);
+});

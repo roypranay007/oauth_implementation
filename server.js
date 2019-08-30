@@ -12,7 +12,20 @@ app.use(cors());
 // Public route
 app.get('/api/deals/public', (req, res)=>{
   let deals = [
-    // Array of public deals here
+    {
+    id: 1234,
+    name: 'Name of Product',
+    description: 'Description of Product',
+    originalPrice: 19.99, // Original price of product
+    salePrice: 9.99 // Sale price of product
+},
+    {
+    id: 12344,
+    name: 'Name of Product',
+    description: 'Description of Product',
+    originalPrice: 19.99, // Original price of product
+    salePrice: 9.99 // Sale price of product
+}
   ];
   res.json(deals);
 })
@@ -20,7 +33,13 @@ app.get('/api/deals/public', (req, res)=>{
 // Private route
 app.get('/api/deals/private', (req,res)=>{
   let deals = [
-    // Array of Private Deals here
+   {
+    id: 1,
+    name: 'Private Name of Product',
+    description: 'Private Description of Product',
+    originalPrice: 19.99, // Original price of product
+    salePrice: 9.99 // Sale price of product
+}
   ];
   res.json(deals);
 })
